@@ -9,10 +9,13 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatCardModule} from '@angular/material/card';
+import { MyBoxComponent } from './my-box/my-box.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ShowDataComponent
+    ShowDataComponent,
+    MyBoxComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +23,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     NoopAnimationsModule,
     MatInputModule,
     MatFormFieldModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
