@@ -3,14 +3,24 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ShowDataComponent } from './show-data/show-data.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatToolbarModule} from '@angular/material/toolbar';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ShowDataComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NoopAnimationsModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
